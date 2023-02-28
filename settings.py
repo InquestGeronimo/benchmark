@@ -3,8 +3,8 @@ class Manager:
     models = {
         "Sparse YOLOv5s COCO": "zoo:cv/detection/yolov5-s/pytorch/ultralytics/coco/pruned85_quant-none",
         "Dense YOLOv5s COCO": "zoo:cv/detection/yolov5-s/pytorch/ultralytics/coco/base-none",
-        "Sparse SSD-300 ResNet-50 COCO": "zoo:cv/detection/ssd-resnet50_300/pytorch/sparseml/coco/pruned-moderate",
-        "Dense SSD-300 ResNet-50 COCO": "zoo:cv/detection/ssd-resnet50_300/pytorch/sparseml/coco/base-none",
+        "Sparse YOLOv5m COCO": "zoo:cv/detection/yolov5-m/pytorch/ultralytics/coco/pruned70_quant-none",
+        "Dense YOLOv5m COCO": "zoo:cv/detection/yolov5-m/pytorch/ultralytics/coco/base-none",
         "Sparse ResNet 50 ImageNet": "zoo:cv/classification/resnet_v1-50/pytorch/sparseml/imagenet/pruned95_uniform_quant-none",
         "Dense ResNet 50 ImageNet": "zoo:cv/classification/resnet_v1-50/pytorch/sparseml/imagenet/base-none",
         "Sparse MobileNetV1 ImageNet": "zoo:cv/classification/mobilenet_v1-1.0/pytorch/sparseml/imagenet/pruned_quant-moderate",
