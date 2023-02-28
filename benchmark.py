@@ -1,6 +1,5 @@
 import subprocess
 from settings import Manager
-from elements import TextElements as text
 
 class Benchmarker:
 
