@@ -1,5 +1,5 @@
 # benchmark
 
 
-scp -r /folder1/folder2//myfiles root@0.0.0.0:/path/on/remote/droplet
+scp -r ./benchmark.zip root@159.223.126.164:/root
 
