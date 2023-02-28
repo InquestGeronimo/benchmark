@@ -10,7 +10,7 @@ class DOHandler:
     def set_droplet(self):
 
         droplet = digitalocean.Droplet(
-            token="dop_v1_e167a289c9ffdf8ec90d16c02be7adbd61c685ed337eec8cb2f9daabec75a529",
+            token="token",
             name='ubuntu-c-4-intel-nyc1-01',
             region='nyc1',
             image='ubuntu-22-10-x64', # Ubuntu 20.04 x64
