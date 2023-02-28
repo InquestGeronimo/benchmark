@@ -37,6 +37,12 @@ class TextElements:
     masked_language_modeling_tab = "Masked Language Modeling"
     
     model_label = "Select Model"
+    engine_label = "Select Engine"
+    batch_label = "Set Batch Size"
+    time_label = "Set time (secs)"
+    scenario_label = "Select Inference Scenario"
+    button_label = "show me the 💵"
+    output_label = "Output Box"
     
     engines = ["DeepSparse", "ONNX"]
     scenarios = ["sync", "async"]

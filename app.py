@@ -7,19 +7,19 @@ from settings import Manager
     
 BM = Benchmarker()
 
-CUSTOM_PATH = "/gradio"
+
 
 app = FastAPI()
    
 def parameters():
     
-    engine = gr.Radio(text.engines, label="Select Engine")
-    batch = gr.Slider(minimum=1, maximum=128, step=1, label="Set Batch Size", interactive=True)
-    time = gr.Slider(minimum=1, maximum=60, step=2, label="Set time (secs)", interactive=True)
-    scenario = gr.Radio(text.scenarios, label="Select Inference Scenario")
+    engine = gr.Radio(text.engines, label=text.engine_label)
+    batch = gr.Slider(minimum=1, maximum=128, step=1, label=text.batch_label, interactive=True)
+    time = gr.Slider(minimum=1, maximum=60, step=2, label=text.time_label, interactive=True)
+    scenario = gr.Radio(text.scenarios, label=text.scenario_label)
     
-    button = gr.Button("show me the 💵")
-    output = gr.Textbox(label="Output Box")
+    button = gr.Button(text.button_label)
+    output = gr.Textbox(label=text.output_label)
     
     button.click(
         fn=BM.get_benchmarks, 
@@ -86,7 +86,7 @@ with gr.Blocks() as demo:
                 model = gr.Radio(text.masked_language_modeling_models, label=text.model_label)
                 parameters()
 
-app = gr.mount_gradio_app(app, demo, path=CUSTOM_PATH)        
+app = gr.mount_gradio_app(app, demo, path=Manager.route)        
                         
 if __name__ == "__main__":
     demo.launch(share=True)
