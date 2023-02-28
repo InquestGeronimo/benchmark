@@ -5,9 +5,6 @@ class TextElements:
 
     md_body = '''
 
-    ### What is Deepsparse? 
-    DeepSparse is Neural Magic's inference runtime offering GPU-class performance on CPUs and APIs to integrate ML into your application. It provides off-the-shelf pipelines for computer vision and NLP that wrap the model with proper pre- and post-processing to run performantly on CPUs by using sparse models.
-
     ## Benchmark
     To Benchmark Neural Magic's sparse models, select the Benchmarking parameters on the right and click `SUBMIT`.
     
@@ -16,6 +13,7 @@ class TextElements:
         title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" frameborder="0" allow="accelerometer; \
         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     
+    # Models
     image_detection_models = ["Sparse YOLOv5s COCO", "Dense YOLOv5s COCO", "Sparse YOLOv5m COCO", "Dense YOLOv5m COCO"]
     image_classification_models = ["Sparse ResNet 50 ImageNet", "Dense ResNet 50 ImageNet", "Sparse MobileNetV1 ImageNet", "Dense MobileNetV1 ImageNet"]
     image_segmentation_models = ["Sparse YOLACT", "Dense YOLACT"]
@@ -26,6 +24,7 @@ class TextElements:
     multi_label_classification_models = ["Sparse oBERT GOEMOTIONS", "Dense oBERT GOEMOTIONS"]
     masked_language_modeling_models = ["Sparse DistilBERT WIKI", "Dense DistilBERT WIKI", "Sparse oBERT WIKI", "Dense oBERT WIKI"]
     
+    # Tasks
     image_detection_tab = "Image Detection"
     image_classification_tab = "Image Classification"
     image_segmentation_tab = "Image Segmentation"
@@ -36,6 +35,7 @@ class TextElements:
     multi_label_classification_tab = "Multi Label Text Classification"
     masked_language_modeling_tab = "Masked Language Modeling"
     
+    # Labels
     model_label = "Select Model"
     engine_label = "Select Engine"
     batch_label = "Set Batch Size"
@@ -44,6 +44,7 @@ class TextElements:
     button_label = "show me the 💵"
     output_label = "Output Box"
     
+    # Parameters
     engines = ["DeepSparse", "ONNX"]
     scenarios = ["sync", "async"]
     
