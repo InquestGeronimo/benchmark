@@ -36,9 +36,3 @@ class Manager:
     }
     
     engines = {"DeepSparse": "deepsparse", "ONNX": "onnxruntime"}
-    
-# task = "Image Detection"
-# model = "Sparse YOLOv5s COCO"
-# model = Manager.models[task][model]
-
-# print(model)
