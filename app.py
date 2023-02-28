@@ -6,9 +6,6 @@ from benchmark import Benchmarker
 from settings import Manager
     
 BM = Benchmarker()
-
-
-
 app = FastAPI()
    
 def parameters():
