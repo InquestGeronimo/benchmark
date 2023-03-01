@@ -8,16 +8,15 @@ class CPUHandler:
     def get_cpu_info(self):
   
         cmd = ["cat /proc/cpuinfo | grep 'model name' | uniq"]
-        
         output = subprocess.check_output(cmd, shell=True).decode("utf-8")
-        output = output.replace("model name", "CPU Model ").strip()
-
-        return output
+        
+        return output.replace("model name", "CPU Model ").strip()
     
     def get_cpu_count(self):
         
         cmd = ["nproc"]
         output = subprocess.check_output(cmd, shell=True).decode("utf-8")
+        
         return f"Total CPUs: {output}"
 
         
