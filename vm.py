@@ -11,7 +11,6 @@ class CPUHandler:
         
         output = subprocess.check_output(cmd, shell=True).decode("utf-8")
         output = output.replace("model name", "CPU Model ").strip()
-        # output = output.replace(": ", "").strip()
 
         return output
     
