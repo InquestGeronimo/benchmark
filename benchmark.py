@@ -1,7 +1,8 @@
 import subprocess
 from settings import Manager
 
-class Benchmarker:
+   
+class Benchmarker():
 
     def get_benchmarks(
         self, 
@@ -23,3 +24,5 @@ class Benchmarker:
             --scenario {scenario}"
         ]
         return subprocess.check_output(cmd, shell=True).decode("utf-8")
+    
+

@@ -4,7 +4,10 @@ from fastapi import FastAPI
 from elements import TextElements as text
 from benchmark import Benchmarker
 from settings import Manager
+from vm import CPUHandler
     
+    
+cpu = CPUHandler()
 BM = Benchmarker()
 app = FastAPI()
    
@@ -12,15 +15,20 @@ app = FastAPI()
 with gr.Blocks() as demo:
     
     gr.Markdown(text.md_title)
-
+    
     with gr.Row():
         
         with gr.Column():
             
             gr.HTML(value=text.embd_video)
             gr.Markdown(text.md_body)   
-            
+            with gr.Accordion("This Machine Runs On...", open=False):
+                gr.Tab(cpu.get_cpu_count())
+                gr.Tab(cpu.get_cpu_info())
+                
         with gr.Column():
+            
+            
             
             for domain, models in text.tab_switch.items():
 
@@ -65,12 +73,17 @@ with gr.Blocks() as demo:
                     button = gr.Button(value=text.button_label)
                     output = gr.Textbox(label=text.output_label).style(container=True)
                     
+                    
+                    
                     button.click(
                         fn=BM.get_benchmarks, 
                         inputs=[model, engine, batch, time, scenario], 
                         outputs=output
                     )
-                
+
+
+    # gr.Tab(cpu.get_cpu_info())
+    # gr.Tab(cpu.get_cpu_count())
 
 app = gr.mount_gradio_app(app, demo, path=Manager.route)        
                         
