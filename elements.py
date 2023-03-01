@@ -6,8 +6,10 @@ class TextElements:
 
     md_body = '''
 
-    ## Benchmark
-    To Benchmark Neural Magic's sparse models, select the Benchmarking parameters on the right and click `SUBMIT`.
+    ## Hello 👋
+    This goal of this demo is to allow users to benchmark the DeepSparse runtime on DigitalOcean's CPUs. The screen on the right allows one to select different configurations for benchmarking select models from the Computer Vision and NLP domains:
+    
+    - the selection o
     
     '''
     

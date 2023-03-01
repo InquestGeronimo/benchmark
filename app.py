@@ -62,7 +62,7 @@ with gr.Blocks() as demo:
                         label=text.scenario_label
                     )
                     
-                    button = gr.Button(label=text.button_label)
+                    button = gr.Button(value=text.button_label)
                     output = gr.Textbox(label=text.output_label)
                     
                     button.click(
