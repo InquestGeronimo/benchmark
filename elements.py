@@ -65,7 +65,7 @@ class TextElements:
     batch_min = 1
     batch_max = 128
     batch_step = 1
-    batch_value = 5
+    batch_value = 1
     
     time_min = 1
     time_max = 60
@@ -78,7 +78,7 @@ class TextElements:
     # Map
     tab_switch = {
         image_detection_tab: image_detection_models,
-        image_classification_tab: image_detection_models,
+        image_classification_tab: image_classification_models,
         image_segmentation_tab: image_segmentation_models,
         sentiment_analysis_tab: sentiment_analysis_models,
         question_answering_tab: question_answering_models,
