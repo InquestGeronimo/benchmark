@@ -63,7 +63,7 @@ with gr.Blocks() as demo:
                     )
                     
                     button = gr.Button(value=text.button_label)
-                    output = gr.Textbox(label=text.output_label)
+                    output = gr.Textbox(label=text.output_label).style(container=True)
                     
                     button.click(
                         fn=BM.get_benchmarks, 

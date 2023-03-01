@@ -2,15 +2,26 @@
 class TextElements:
     
     # Markdown Text
-    md_title = "# Benchmarking Sparse Models with DigitalOcean's Premium Intel CPUs!"
+    md_title = "# Benchmarking Sparse Models on DigitalOcean's CPUs!"
 
     md_body = '''
 
-    ## Hello 👋
-    This goal of this demo is to allow users to benchmark the DeepSparse runtime on DigitalOcean's CPUs. The screen on the right allows one to select different configurations for benchmarking select models from the Computer Vision and NLP domains:
+    ## Hey There 👋
     
-    - the selection o
+    Welcome to Neural Magic's Benchmarking Demo where you can put DeepSparse runtime on DigitalOcean's CPUs to the test! 
+    Our goal is to provide an easy-to-use platform for users to benchmark select models from Computer Vision and NLP domains, 
+    and to do so with a variety of different configurations.
+
+    Whether you're an expert in the field or just getting started, our demo provides a straightforward way to put DeepSparse to the test and get valuable insights into its performance. 
     
+        Step 1: Select your AI task in the tabs.
+        Step 2: Select your model. You have the choice of benchmarking a sparse or dense model.
+        Step 3: Select your engine.
+        Step 4: Set your batch size, which refers to the number of input samples that are processed.
+        Step 5: Set the time of how long the benchmarking will take.
+        Step 6: Select your inference scenario. SYNC is used to simulate model latency/synchronous 
+                scenarios, while ASYNC is used to simulate model throughput/asynchronous scenarios.
+        
     '''
     
     # Video
