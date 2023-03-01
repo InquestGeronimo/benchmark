@@ -31,28 +31,31 @@ with gr.Blocks() as demo:
                         value=models[0],
                         label=text.model_label
                     )
-                
+                    
                     engine = gr.Radio(
                         choices=text.engines, 
                         value=text.engines[0], 
                         label=text.engine_label
                     )
+                    
                     batch = gr.Slider(
-                        minimum=1, 
-                        maximum=128, 
-                        step=1, 
-                        value=5, 
+                        minimum=text.batch_min, 
+                        maximum=text.batch_max, 
+                        step=text.batch_step, 
+                        value=text.batch_value, 
                         label=text.batch_label, 
                         interactive=True
                     )
+                    
                     time = gr.Slider(
-                        minimum=1, 
-                        maximum=60, 
-                        step=2, 
-                        value=5, 
+                        minimum=text.time_min, 
+                        maximum=text.time_max, 
+                        step=text.time_step, 
+                        value=text.time_value, 
                         label=text.time_label, 
                         interactive=True
                     )
+                    
                     scenario = gr.Radio(
                         choices=text.scenarios, 
                         value=text.scenarios[0], 
