@@ -13,7 +13,7 @@ class TextElements:
     and to do so with a variety of different configurations.
 
     Whether you're an expert in the field or just getting started, 
-    our demo provides a straightforward way to put DeepSparse to the test and get valuable insights into its performance.
+    our demo provides a straightforward way to load sparse deep learning models into DeepSparse and get valuable insights into its performance on CPUs.
     
     To get started:
     
@@ -96,7 +96,7 @@ class TextElements:
             <div style="max-width: 700px;">
                 <iframe
                     width="100%" height="315"
-                    src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1"
+                    src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1&modestbranding=0"
                     title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
