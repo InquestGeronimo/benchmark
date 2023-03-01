@@ -49,6 +49,16 @@ class TextElements:
     output_label = "Output Box"
     
     # Parameters
+    batch_min = 1
+    batch_max = 128
+    batch_step = 1
+    batch_value = 5
+    
+    time_min = 1
+    time_max = 60
+    time_step = 2
+    time_value = 5
+    
     engines = ["DeepSparse", "ONNX"]
     scenarios = ["sync", "async"]
 
