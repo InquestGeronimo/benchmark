@@ -12,23 +12,44 @@ class TextElements:
     Our goal is to provide an easy-to-use platform for users to benchmark select models from Computer Vision and NLP domains, 
     and to do so with a variety of different configurations.
 
-    Whether you're an expert in the field or just getting started, our demo provides a straightforward way to put DeepSparse to the test and get valuable insights into its performance. 
+    Whether you're an expert in the field or just getting started, 
+    our demo provides a straightforward way to put DeepSparse to the test and get valuable insights into its performance.
     
-        Step 1: Select your AI task in the tabs.
-        Step 2: Select your model. You have the choice of benchmarking a sparse or dense model.
-        Step 3: Select your engine.
-        Step 4: Set your batch size, which refers to the number of input samples that are processed.
-        Step 5: Set the time of how long the benchmarking will take.
-        Step 6: Select your inference scenario. SYNC is used to simulate model latency/synchronous 
-                scenarios, while ASYNC is used to simulate model throughput/asynchronous scenarios.
-        
+    To get started:
+    
+    1.  Select your AI task in the tabs.
+    2.  Select your model. You have the choice of benchmarking a sparse or dense model.
+    3.  Select your engine.
+    4.  Set your batch size, which refers to the number of input samples that are processed.
+    5.  Set the time of how long the benchmarking will take.
+    6.  Select your inference scenario. 
+        - SYNC is used to simulate model latency/synchronous scenarios
+        - ASYNC is used to simulate model throughput/asynchronous scenarios.
     '''
     
     # Video
-    embd_video = '<iframe width="700" height="375" src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
-        title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" frameborder="0" allow="accelerometer; \
-        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    # embd_video = '<iframe width="700" height="375" src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
+    #     title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" frameborder="0" allow="accelerometer; \
+    #     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
     
+
+    embd_video = '<html> \
+                    <head> \
+                        <link rel="stylesheet" href="./style.css"> \
+                    </head> \
+                    <body> \
+                        <div style="max-width: 700px;"> \
+                            <iframe \
+                                iframe width="100%" height="315" \
+                                src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
+                                title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" \
+                                frameborder="0" \
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> \
+                            </iframe> \
+                        </div> \
+                    </body> \
+                   </html>'
+
     # Models
     image_detection_models = ["Sparse YOLOv5s COCO", "Dense YOLOv5s COCO", "Sparse YOLOv5m COCO", "Dense YOLOv5m COCO"]
     image_classification_models = ["Sparse ResNet 50 ImageNet", "Dense ResNet 50 ImageNet", "Sparse MobileNetV1 ImageNet", "Dense MobileNetV1 ImageNet"]
@@ -59,7 +80,7 @@ class TextElements:
     time_label = "Set time (secs)"
     scenario_label = "Select Inference Scenario"
     button_label = "show me the 💵"
-    output_label = "Output Box"
+    output_label = "Benchmark Results"
     
     # Parameters
     batch_min = 1
