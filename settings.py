@@ -37,4 +37,4 @@ class Manager:
     
     engines = {"DeepSparse": "deepsparse", "ONNX": "onnxruntime"}
     
-    route = "/gradio"
+    route = "/deepsparse"
