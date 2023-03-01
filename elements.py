@@ -27,29 +27,6 @@ class TextElements:
         - ASYNC is used to simulate model throughput/asynchronous scenarios.
     '''
     
-    # Video
-    # embd_video = '<iframe width="700" height="375" src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
-    #     title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" frameborder="0" allow="accelerometer; \
-    #     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-    
-
-    embd_video = '<html> \
-                    <head> \
-                        <link rel="stylesheet" href="./style.css"> \
-                    </head> \
-                    <body> \
-                        <div style="max-width: 700px;"> \
-                            <iframe \
-                                iframe width="100%" height="315" \
-                                src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
-                                title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" \
-                                frameborder="0" \
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> \
-                            </iframe> \
-                        </div> \
-                    </body> \
-                   </html>'
-
     # Models
     image_detection_models = ["Sparse YOLOv5s COCO", "Dense YOLOv5s COCO", "Sparse YOLOv5m COCO", "Dense YOLOv5m COCO"]
     image_classification_models = ["Sparse ResNet 50 ImageNet", "Dense ResNet 50 ImageNet", "Sparse MobileNetV1 ImageNet", "Dense MobileNetV1 ImageNet"]
@@ -108,3 +85,20 @@ class TextElements:
         multi_label_classification_tab: multi_label_classification_models,
         masked_language_modeling_tab: masked_language_modeling_models
     }
+    
+    embd_video = '<html> \
+                    <head> \
+                        <link rel="stylesheet" href="./style.css"> \
+                    </head> \
+                    <body> \
+                        <div style="max-width: 700px;"> \
+                            <iframe \
+                                iframe width="100%" height="315" \
+                                src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
+                                title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" \
+                                frameborder="0" \
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> \
+                            </iframe> \
+                        </div> \
+                    </body> \
+                   </html>'
