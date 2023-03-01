@@ -38,6 +38,7 @@ class TextElements:
     multi_label_classification_tab = "Multi Label Text Classification"
     masked_language_modeling_tab = "Masked Language Modeling"
     
+
     # Labels
     model_label = "Select Model"
     engine_label = "Select Engine"
@@ -50,4 +51,16 @@ class TextElements:
     # Parameters
     engines = ["DeepSparse", "ONNX"]
     scenarios = ["sync", "async"]
-    
+
+    # Map
+    tab_switch = {
+        image_detection_tab: image_detection_models,
+        image_classification_tab: image_detection_models,
+        image_segmentation_tab: image_segmentation_models,
+        sentiment_analysis_tab: sentiment_analysis_models,
+        question_answering_tab: question_answering_models,
+        token_classification_tab: token_classification_models,
+        document_classification_tab: document_classification_models,
+        multi_label_classification_tab: multi_label_classification_models,
+        masked_language_modeling_tab: masked_language_modeling_models
+    }
