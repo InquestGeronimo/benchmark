@@ -22,13 +22,12 @@ with gr.Blocks() as demo:
             
             gr.HTML(value=text.embd_video)
             gr.Markdown(text.md_body)   
-            with gr.Accordion("This Machine Runs On...", open=False):
+            
+            with gr.Accordion(label=text.accordion_label, open=False):
                 gr.Tab(cpu.get_cpu_count())
                 gr.Tab(cpu.get_cpu_info())
                 
         with gr.Column():
-            
-            
             
             for domain, models in text.tab_switch.items():
 
@@ -81,9 +80,6 @@ with gr.Blocks() as demo:
                         outputs=output
                     )
 
-
-    # gr.Tab(cpu.get_cpu_info())
-    # gr.Tab(cpu.get_cpu_count())
 
 app = gr.mount_gradio_app(app, demo, path=Manager.route)        
                         

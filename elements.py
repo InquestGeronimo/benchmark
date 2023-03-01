@@ -58,6 +58,7 @@ class TextElements:
     scenario_label = "Select Inference Scenario"
     button_label = "show me the 💵"
     output_label = "Benchmark Results"
+    accordion_label = "This Machine Runs On..."
     
     # Parameters
     batch_min = 1
