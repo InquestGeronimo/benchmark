@@ -23,7 +23,7 @@ class TextElements:
     4.  Set your batch size, which refers to the number of input samples that are processed.
     5.  Set the time of how long the benchmarking will take.
     6.  Select your inference scenario. 
-        - SYNC is used to simulate model latency/synchronous scenarios
+        - SYNC is used to simulate model latency/synchronous scenarios.
         - ASYNC is used to simulate model throughput/asynchronous scenarios.
     '''
     
@@ -86,19 +86,22 @@ class TextElements:
         masked_language_modeling_tab: masked_language_modeling_models
     }
     
-    embd_video = '<html> \
-                    <head> \
-                        <link rel="stylesheet" href="./style.css"> \
-                    </head> \
-                    <body> \
-                        <div style="max-width: 700px;"> \
-                            <iframe \
-                                iframe width="100%" height="315" \
-                                src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1" \
-                                title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint" \
-                                frameborder="0" \
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> \
-                            </iframe> \
-                        </div> \
-                    </body> \
-                   </html>'
+    embd_video = '''
+    <html>
+        <head>
+            <link rel="stylesheet" href="./style.css">
+        </head>
+        <body>
+            <div style="max-width: 700px;">
+                <iframe
+                    width="100%" height="315"
+                    src="https://www.youtube.com/embed/gGErxSqf05o?autoplay=1&mute=1"
+                    title="YOLOv5 on CPUs: Sparsifying to Achieve GPU-Level Performance and Tiny Footprint"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </body>
+    </html>
+    '''
