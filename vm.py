@@ -21,7 +21,7 @@ class CPUHandler:
 
         
 
-class DOHandler:
+class Droplet:
 
     def __init__(self) -> None:
         ...
@@ -59,7 +59,7 @@ class DOHandler:
 
 if __name__ == '__main__':
 
-    DO = DOHandler()
+    DO = Droplet()
     droplet = DO.set_droplet()
     droplet = DO.create_droplet(droplet)
     droplet = DO.get_status(droplet)
