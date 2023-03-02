@@ -89,9 +89,6 @@ class TextElements:
     
     embd_video = '''
     <html>
-        <head>
-            <link rel="stylesheet" href="./style.css">
-        </head>
         <body>
             <div style="max-width: 700px;">
                 <iframe

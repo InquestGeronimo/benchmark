@@ -72,8 +72,6 @@ with gr.Blocks() as demo:
                     button = gr.Button(value=text.button_label)
                     output = gr.Textbox(label=text.output_label)
                     
-                    
-                    
                     button.click(
                         fn=bench.get_benchmarks, 
                         inputs=[model, engine, batch, time, scenario], 
