@@ -32,8 +32,8 @@ class Droplet:
             token="token",
             name='ubuntu-c-4-intel-nyc1-01',
             region='nyc1',
-            image='ubuntu-22-10-x64', # Ubuntu 20.04 x64
-            size_slug='c-4-intel',  # 1GB RAM, 1 vCPU
+            image='ubuntu-22-10-x64',
+            size_slug='c-4-intel',
             backups=False
         )
 
