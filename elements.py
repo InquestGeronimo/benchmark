@@ -49,7 +49,6 @@ class TextElements:
     multi_label_classification_tab = "Multi Label Text Classification"
     masked_language_modeling_tab = "Masked Language Modeling"
     
-
     # Labels
     model_label = "Select Model"
     engine_label = "Select Engine"
