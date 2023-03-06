@@ -11,12 +11,6 @@ class CPUHandler:
         output = subprocess.check_output(cmd, shell=True).decode("utf-8")
         
         return output.replace("model name", "CPU Model ").strip()
-    
-    def get_ram(self):
-        
-        cmd = ["free -h"]
-        output = subprocess.check_output(cmd, shell=True).decode("utf-8")
-        return output
         
     def get_cpu_count(self):
         
