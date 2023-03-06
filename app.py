@@ -11,7 +11,7 @@ bench = Benchmarker()
 cpu = CPUHandler()
 app = FastAPI()
    
-    
+
 with gr.Blocks() as demo:
     
     gr.Markdown(text.md_title)
@@ -25,7 +25,8 @@ with gr.Blocks() as demo:
             
             with gr.Accordion(label=text.accordion_label, open=False):
                 gr.Tab(cpu.get_cpu_count())
-                gr.Tab(cpu.get_cpu_info())
+                gr.Tab(cpu.get_cpu_model_name())
+                gr.Tab(cpu.get_ram())
                 
         with gr.Column():
             
