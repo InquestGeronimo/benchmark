@@ -29,10 +29,6 @@ class Manager:
         "Dense oBERT IMDB": "zoo:nlp/document_classification/obert-base/pytorch/huggingface/imdb/base-none",
         "Sparse oBERT GOEMOTIONS": "zoo:nlp/multilabel_text_classification/obert-base/pytorch/huggingface/goemotions/pruned90_quant-none",
         "Dense oBERT GOEMOTIONS": "zoo:nlp/multilabel_text_classification/obert-base/pytorch/huggingface/goemotions/base-none",
-        "Sparse DistilBERT WIKI": "zoo:nlp/masked_language_modeling/distilbert-none/pytorch/huggingface/wikipedia_bookcorpus/pruned80_quant-none-vnni",
-        "Dense DistilBERT WIKI": "zoo:nlp/masked_language_modeling/distilbert-none/pytorch/huggingface/wikipedia_bookcorpus/base-none",
-        "Sparse oBERT WIKI": "zoo:nlp/masked_language_modeling/obert-base/pytorch/huggingface/wikipedia_bookcorpus/pruned80_quant-none-vnni",
-        "Dense oBERT WIKI": "zoo:nlp/masked_language_modeling/obert-base/pytorch/huggingface/wikipedia_bookcorpus/base-none"
     }
     
     engines = {"DeepSparse": "deepsparse", "ONNX": "onnxruntime"}

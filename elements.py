@@ -36,7 +36,6 @@ class TextElements:
     token_classification_models = ["Sparse DistilBERT CONLL", "Dense DistilBERT CONLL", "Sparse oBERT CONLL", "Dense oBERT CONLL"]
     document_classification_models = ["Sparse RoBERTa IMDB", "Dense RoBERTa IMDB", "Sparse oBERT IMDB", "Dense oBERT IMDB"]
     multi_label_classification_models = ["Sparse oBERT GOEMOTIONS", "Dense oBERT GOEMOTIONS"]
-    masked_language_modeling_models = ["Sparse DistilBERT WIKI", "Dense DistilBERT WIKI", "Sparse oBERT WIKI", "Dense oBERT WIKI"]
     
     # Tasks
     image_detection_tab = "Image Detection"
@@ -83,7 +82,6 @@ class TextElements:
         token_classification_tab: token_classification_models,
         document_classification_tab: document_classification_models,
         multi_label_classification_tab: multi_label_classification_models,
-        masked_language_modeling_tab: masked_language_modeling_models
     }
     
     embd_video = '''
