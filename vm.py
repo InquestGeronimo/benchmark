@@ -33,7 +33,7 @@ class Droplet:
         self, 
         token: str, 
         name: str, 
-        region: str, 
+        region: str,
         image: str, 
         size_slug:str, 
         backups: bool
@@ -46,10 +46,14 @@ class Droplet:
         self.size_slug=size_slug
         self.backups=backups
       
+        self.manager = digitalocean.Manager(token=self.token)
+        self.ssh_keys = self.manager.get_all_sshkeys()
+        
         self.droplet = digitalocean.Droplet(
             token=self.token,
             name=self.name,
             region=self.region,
+            ssh_keys=self.ssh_keys,
             image=self.image,
             size_slug=self.size_slug,
             backups=self.backups
@@ -59,5 +63,3 @@ class Droplet:
 
         self.droplet.create()
         print("droplet is staging...")
-
-

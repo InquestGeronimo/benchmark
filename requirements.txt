@@ -1,4 +1,4 @@
-deepsparse==1.4.0
+deepsparse-nightly
 gradio==3.19.1
 deepsparse[onnxruntime]
 python-digitalocean>=1.17.0
