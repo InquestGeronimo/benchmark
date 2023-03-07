@@ -1,7 +1,7 @@
 import subprocess
 from settings import Manager
 
-   
+
 class Benchmarker():
 
     def get_benchmarks(

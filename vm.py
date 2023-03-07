@@ -1,6 +1,5 @@
 import digitalocean
 import subprocess
-import time
 
 
 class CPUHandler:

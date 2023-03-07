@@ -1,4 +1,4 @@
 deepsparse-nightly
-gradio==3.19.1
 deepsparse[onnxruntime]
+gradio==3.19.1
 python-digitalocean>=1.17.0
